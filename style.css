@@ -1,0 +1,48 @@
+:root {
+    --background-color: rgb(6, 16, 49);
+    --border-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav .nav-section {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-dashboard-section,
+#nav-social-section,
+#nav-login-section {
+    flex-basis: calc(100%/3);
+}
+
+#nav-social-section {
+    gap: 6rem;
+}
+
+a {
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
