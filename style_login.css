@@ -1,0 +1,106 @@
+:root {
+    --background-color: rgb(37, 53, 107);
+    --background-color2: rgb(5, 15, 62);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--background-color2), var(--background-color));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+.login-window {
+    background: linear-gradient(to bottom, var(--background-color), var(--background-color2));
+    min-width: 400px;
+    width: 40%;
+    height: 30%;
+    border-style: solid;
+    position: relative;
+}
+
+.login-window-header {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.login-window-email {
+    margin: 15px;
+    color: white;
+}
+
+.login-window-email-label {
+    display: flex;
+    justify-content: center;
+}
+
+.login-window-email-input {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px;
+    height: 30px;
+    width: 80%;
+}
+
+.login-window-password {
+    margin: 15px;
+    color: white;
+}
+
+.login-window-password-label {
+    display: flex;
+    justify-content: center;
+}
+
+.login-window-password-input {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.login-window-submit {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    appearance:none;
+    -webkit-appearance:none;
+    padding: 10px;
+    border: none;
+    background-color: azure;
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 20%;
+    transition: 300ms;
+}
+
+button:hover {
+    background-color: rgb(140, 148, 242);
+}
